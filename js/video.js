@@ -33,8 +33,14 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 
 document.querySelector("#skip").addEventListener("click", function() {
+	if (vid.currentTime < vid.duration){
 	vid.currentTime += 10;
 	console.log("The current time is", vid.currentTime);
+	}
+	if (vid.currentTime >= vid.duration) {
+		vid.currentTime = 0;
+		console.log("The current time is", vid.currentTime);
+	}
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
