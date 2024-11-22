@@ -11,7 +11,6 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	vid.play();
-	vid.volume = 0.1;
 	console.log("Play Video");
 });
 
@@ -46,7 +45,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	let muteButton = document.querySelector("#mute");
 	if (muteButton.innerHTML === "Mute") {
-		muteButton.innerHTML = "UnMute";
+		muteButton.innerHTML = "Unmute";
 		vid.muted = true;
 		console.log("Video is muted");
 	} else {
