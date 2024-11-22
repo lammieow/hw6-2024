@@ -5,12 +5,12 @@ window.addEventListener("load", function() {
 	console.log("Good job opening the window");
 	vid.autoplay = false;
 	// vid.load()
-	document.querySelector("#volume").innerHTML = slider.value + "%"; 
 });
 
 
 document.querySelector("#play").addEventListener("click", function() {
 	vid.play();
+	document.querySelector("#volume").innerHTML = slider.value + "%"; 
 	console.log("Play Video");
 });
 
